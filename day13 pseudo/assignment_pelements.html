@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment- Pseudo elements</title>
+    <style>
+        .required_heading::before {
+            content: "★";
+            color: red;
+        }
+
+        .description::after {
+            content: "Read more...";
+            color: blue;
+        }
+
+        .first_letter::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+
+        .first_line::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .custom_list {
+            list-style: none;
+        }
+
+        .custom_list li::before {
+            content: "→";
+            color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="required_heading">Email Address</h2>
+
+    <p class="description">
+        Our platform helps students learn web development through practical
+        projects, simple explanations, and hands-on coding exercises.
+    </p>
+
+    <h2 class="heading">Our Services</h2>
+
+    <p class="first_letter">
+        Welcome to our online learning platform where you can improve your
+        coding skills through practical exercises and projects.
+    </p>
+
+    <p class="first_line">
+        Our company provides creative digital solutions for businesses and
+        individuals. We focus on modern design, user experience, and
+        innovative technology to help our clients grow. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <ul class="custom_list">
+        <li>UI/UX Design</li>
+        <li>HTML and CSS</li>
+        <li>Responsive Web Design</li>
+        <li>Figma Prototyping</li>
+        <li>Web Development</li>
+    </ul>
+</body>
+
+</html>

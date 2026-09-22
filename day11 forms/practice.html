@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice work</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(243, 242, 239);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .registration_box {
+            width: 400px;
+            padding: 35px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .registration_box h3 {
+            text-align: left;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        .form_group {
+            margin-bottom: 18px;
+        }
+
+        .form_group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        .form_group input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 6px;
+            border: 1px solid grey;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="registration_box">
+        <h3>Student Registration</h3>
+        <form action="">
+
+            <div class="form_group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form_group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form_group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required />
+            </div>
+
+            <div class="form_group">
+                <label>Phone:</label>
+                <input type="number" placeholder="Enter your phone number" required>
+            </div>
+
+            <button>Register</button>
+        </form>
+
+</body>
+
+</html>

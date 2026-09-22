@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment- Pesudo Classes</title>
+    <style>
+        body{
+            background: linear-gradient(#fcd0df, #fce4ec, #e8dff5);
+        }
+        .demo_box {
+            width: 500px;
+            padding: 30px;
+            margin: 30px;
+            border: none;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .demo_box h2 {
+            margin-bottom: 10px;
+        }
+
+        .demo_box p {
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        .explore_btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: palevioletred;
+            color: white;
+            cursor: pointer;
+        }
+
+        .explore_btn:hover {
+            background-color: rgb(154, 54, 87);
+        }
+
+        .navbar {
+            width: 90%;
+            padding: 18px 30px;
+            margin: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: rgb(220, 49, 106);
+        }
+
+        .nav_links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav_links a {
+            color: #444;
+            text-decoration: none;
+        }
+
+        .nav_links a:hover {
+            color: rgb(194, 51, 99);
+        }
+
+        .nav_links a:active {
+            color: #e052a0;
+        }
+
+        .nav_btn {
+            padding: 10px 18px;
+            background-color: palevioletred;
+            color: white;
+            border: none;
+            border-radius: 7px;
+        }
+
+        .search_box {
+            width: 500px;
+            padding: 30px;
+            margin: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .search_box h2 {
+            margin-bottom: 20px;
+        }
+
+        .search_box input {
+            width: 70%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .search_box input:focus {
+            border-color: palevioletred;
+            outline: none;
+        }
+
+        .search_box button {
+            padding: 12px 18px;
+            margin-left: 5px;
+            border: none;
+            border-radius: 8px;
+            background-color: palevioletred;
+            color: white;
+        }
+
+        .features {
+            width: 500px;
+            padding: 30px;
+            margin: 30px;
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .features h2 {
+            margin-bottom: 20px;
+        }
+
+        .features ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .features li {
+            padding: 14px 18px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            background-color: rgb(248, 202, 217);
+        }
+
+        .features li:nth-child(even) {
+            background-color: #beb1f9;
+        }
+
+        .signup_box {
+            width: 450px;
+            padding: 30px;
+            margin: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .signup_box h2 {
+            margin-bottom: 8px;
+        }
+
+        .signup_box p {
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .signup_box label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .signup_box input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .signup_box input:invalid {
+            border-color: #e74c3c
+        }
+
+        .signup_box button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: rgb(243, 121, 162);
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .table_box {
+            width: 800px;
+            padding: 30px;
+            margin: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08)
+        }
+
+        .table_box h2 {
+            margin-bottom: 20px;
+        }
+
+        .table_box table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table_box th,
+        .table_box td {
+            padding: 14px 18px;
+            border: 1px solid #7d7d7d;
+            text-align: center;
+        }
+
+        .table_box th {
+            background-color: rgb(255, 150, 185);
+            color: white;
+        }
+
+        .table_box tr:nth-child(even) {
+            background-color: rgb(208, 171, 251);
+        }
+
+        .table_box tr:nth-child(odd) {
+            background-color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="demo_box">
+        <h2>Explore Our Collection</h2>
+        <p>
+            Discover a wide range of products that cater to your needs and preferences. Our collection is carefully
+            curated
+            to ensure quality and style.
+        </p>
+
+        <button class="explore_btn">Explore Now</button>
+    </section>
+
+    <nav class="navbar">
+        <h2 class="logo">LUMORA</h2>
+
+        <div class="nav_links">
+            <a href="">Home</a>
+            <a href="">Collection</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+
+        <button class="nav_btn">Shop Now</button>
+    </nav>
+
+    <div class="search_box">
+        <h2>Find Your Perfect Product</h2>
+
+        <input type="text" placeholder="Search products" required />
+        <button>Search</button>
+    </div>
+
+    <div class="features">
+        <h2>Why Choose Us?</h2>
+
+        <ul>
+            <li>Premium Quality Products</li>
+            <li>Fast & Reliable Delivery</li>
+            <li>Secure Online Payment</li>
+            <li>Easy Returns & Refunds</li>
+            <li>24/7 Customer Support</li>
+        </ul>
+    </div>
+
+    <div class="signup_box">
+
+        <h2>Create Your Account</h2>
+        <p>Join our community and start your journey.</p>
+
+        <form>
+
+            <label for="">Email Address</label>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Create Account</button>
+
+        </form>
+    </div>
+
+    <div class="table_box">
+
+        <h2>Student Performance</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>English</th>
+                    <th>Maths</th>
+                    <th>Science</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Aisha</td>
+                    <td>88</td>
+                    <td>92</td>
+                    <td>85</td>
+                    <td>A</td>
+                </tr>
+
+                <tr>
+                    <td>Annie</td>
+                    <td>76</td>
+                    <td>81</td>
+                    <td>79</td>
+                    <td>B+</td>
+                </tr>
+
+                <tr>
+                    <td>Meera</td>
+                    <td>94</td>
+                    <td>89</td>
+                    <td>91</td>
+                    <td>A+</td>
+                </tr>
+
+                <tr>
+                    <td>Maya</td>
+                    <td>82</td>
+                    <td>78</td>
+                    <td>86</td>
+                    <td>A</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

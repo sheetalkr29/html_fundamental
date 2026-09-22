@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient( #E8F0E8, #d9f3dc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .signup_box {
+            width: 500px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: inset  #090f09;
+        }
+
+        .signup_box h2 {
+            color: rgb(3, 44, 3);
+            margin-bottom: 4px;
+        }
+
+        .subtitles {
+            color: rgb(44, 44, 44);
+            margin-bottom: 25px;
+        }
+
+        .form_group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form_group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .form_group input {
+            width: 100%;
+            padding: 15px;
+            border-radius: 30px;
+            border: 1px solid grey;
+        }
+
+        .checkbox {
+            text-align: left;
+            color: #34283D;
+            margin-bottom: 20px;
+            font-size: small;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #1a581a;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .login {
+            font-size: small;
+            color: #286728;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup_box">
+
+        <h2>Create your account</h2>
+        <p class="subtitles">Join us and start your journey</p>
+
+        <form action="">
+
+            <div class="form_group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="form_group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form_group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Create password" required />
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="Terms&Cond" required />
+                <label for="checkbox">I agree to the Terms & Conditions</label>
+            </div>
+
+            <button type="submit">CREATE ACCOUNT</button>
+        </form>
+
+        <p class="login">Already have an account? <b>Login</b></p>
+
+    </div>
+
+</body>
+
+</html>

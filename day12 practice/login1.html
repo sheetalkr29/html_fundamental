@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(#d6c7fa,#ceb9e8, #ff9dd8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .login_box {
+            width: 450px;
+            padding: 35px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba (120, 70, 110, 0.3);
+            text-align: center;
+        }
+
+        .user_icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            padding: 20px;
+            background-color: #d18ac3;
+            border-radius: 50%;
+        }
+
+        .user_icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .login_box h2 {
+            color: #6f3d68;
+            margin-bottom: 4px;
+        }
+
+        .subtitles {
+            color: #888;
+            margin-bottom: 25px;
+        }
+
+        .form_group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form_group input {
+            width: 100%;
+            padding: 12px;
+            border: 1.5px solid #d5b3cf;
+            border-radius: 30px;
+        }
+
+        .remember_row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .remember_row label {
+            color: #a65395;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .remember_row a {
+            color: #a65395;
+            text-decoration: none;
+            font-size: small;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border-radius: 30px;
+            background-color: #c879b7;
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .signup_text {
+            margin-top: 22px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .signup_text a {
+            color: #a65395;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login_box">
+
+        <div class="user_icon">
+            <img src="./img/user.png" alt="User" />
+        </div>
+
+        <h2>Welcome back!</h2>
+        <p class="subtitles">Login to continue your journey</p>
+
+        <form action="">
+
+            <div class="form_group">
+                <label for="username"></label>
+                <input type="text" id="username" placeholder="Username" required />
+            </div>
+
+            <div class="form_group">
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="Password" required />
+            </div>
+
+            <div class="remember_row">
+
+                <div>
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+
+                <a href="">Forgot Password?</a>
+
+            </div>
+
+            <button type="submit">LOGIN</button>
+        </form>
+
+        <p class="signup_text"> Don't have an account? <a href="">Sign Up</a></p>
+
+    </div>
+
+</body>
+
+</html>

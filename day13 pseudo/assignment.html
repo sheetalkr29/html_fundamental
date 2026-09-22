@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo class & elements</title>
+    <style>
+        .card {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card h2 {
+            color: black;
+        }
+
+        .card:hover {
+            transform: translate(20px);
+        }
+
+        .card:hover h2 {
+            color: palevioletred;
+        }
+
+        .card:hover::after {
+            content: " →";
+            color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <img src="./img/-473Wx593H-4946238300-multi-MODEL.avif" alt="Wireless Headphone" />
+
+        <h2>Wireless Headphones</h2>
+
+        <p>
+            Enjoy clear sound and comfortable listening with our lightweight
+            wireless headphones, designed for everyday use.
+        </p>
+
+    </div>
+</body>
+
+</html>

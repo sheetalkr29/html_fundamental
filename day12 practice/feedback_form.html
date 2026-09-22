@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #161616;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .feedback_box {
+            width: 380px;
+            padding: 30px;
+            background-color: #1e1e1e;
+            border: 1px solid #444;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .feedback_box h3 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .form_group {
+            margin-bottom: 18px;
+        }
+
+        .form_group label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+            color: #ddd;
+        }
+
+        .form_group input {
+            width: 100%;
+            padding: 10px;
+            background-color: #2b2b2b;
+            color: white;
+            border: 1px solid #555;
+            border-radius: 7px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #7c3aed;
+            color: white;
+            border: none;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="feedback_box">
+
+        <h3>Feedback Form</h3>
+
+        <form action="">
+
+            <div class="form_group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form_group">
+                <label>Feedback:</label>
+                <input type="text" placeholder="Enter your feedback" required>
+            </div>
+
+            <button class="submit_btn">Submit Feedback</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

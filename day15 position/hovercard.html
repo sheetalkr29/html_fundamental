@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position- Hover card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #d3dcfc, #b2c2f9);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card {
+            width: 380px;
+            background-color: white;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            transition: 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+        }
+
+        .card_content {
+            padding: 25px;
+        }
+
+        .category {
+            color: #241674;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            color: #292929;
+            margin-bottom: 12px;
+            transition: 0.4s ease;
+        }
+
+        .card:hover h2 {
+            color: #529cf8;
+
+        }
+
+        .description {
+            color: #6b6b6b;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .description::after {
+            content: "→";
+            display: block;
+            margin-top: 12px;
+            color: #241674;
+            font-size: 24px;
+            opacity: 0;
+            transition: 0.4s ease;
+        }
+
+        .card:hover .description::after {
+            opacity: 1;
+        }
+
+        .price {
+            margin-top: 15px;
+
+            font-size: 20px;
+            font-weight: bold;
+
+            color: #292929;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <img src="./img/headphone.jpg" alt="Wireless Headphone" />
+
+        <div class="card_content">
+
+            <p class="category"> AUDIO · WIRELESS</p>
+
+            <h2>CloudSound Headphone</h2>
+
+            <p class="description">
+                Experience rich, balanced sound with CloudSound Headphones,
+                designed for comfortable everyday listening. With a lightweight
+                design, soft ear cushions, and clear audio, they are perfect
+                for music, work, travel, and relaxing moments throughout the day.
+            </p>
+
+            <p class="price">₹2,499</p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

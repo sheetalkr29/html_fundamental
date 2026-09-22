@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-Pseudo elements</title>
+    <style>
+        .featured_title::before {
+            content: "★";
+            color: #e85d8e;
+        }
+
+        .story_text::after {
+            content: "Read more...";
+            color: #d94f83;
+            font-weight: bold;
+        }
+
+        .section_title::after {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 4px;
+            background-color: #e85d8e;
+            margin-top: 10px;
+        }
+
+        .philosophy::first-letter {
+            font-size: 42px;
+            color: #e85d8e;
+            font-weight: bold;
+        }
+
+        .design_text::first-line {
+            color: #e85d8e;
+            font-weight: bold;
+        }
+
+        .benefits_list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefits_list li {
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            background-color: #fce6f1;
+            border-radius: 8px;
+        }
+
+        .benefits_list li::before {
+            content: "✓";
+            color: #e85d8e;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section_box">
+        <h2 class="featured_title">Featured Collection</h2>
+
+        <p>
+            Explore our carefully selected collection of products,
+            created to bring style and comfort to your everyday life.
+        </p>
+
+        <h2>Our Story</h2>
+
+        <p class="story_text">
+            What started as a small idea has grown into a creative space
+            where design, quality, and thoughtful experiences come together.
+            We believe that even the smallest details can make a difference.
+        </p>
+
+        <h2 class="section_title">What We Offer</h2>
+
+        <p>
+            From thoughtful design to reliable service, we focus on
+            creating experiences that are simple, useful, and beautiful.
+        </p>
+
+        <h2>Our Philosophy</h2>
+
+        <p class="philosophy">
+            Great design is not only about how something looks. It is
+            about how naturally people understand and use it. Every detail
+            should have a purpose and contribute to a better experience.
+        </p>
+
+        <h2>Why Good Design Matters</h2>
+
+        <p class="design_text">
+            Good design makes information easier to understand and products
+            easier to use. It creates clarity, builds trust, and helps people
+            complete their goals without unnecessary confusion.
+        </p>
+
+        <h2>Why Choose Us?</h2>
+
+        <ul class="benefits_list">
+            <li>Thoughtfully designed experiences</li>
+            <li>High-quality products and services</li>
+            <li>Simple and user-friendly solutions</li>
+            <li>Fast and reliable customer support</li>
+            <li>Focused on your everyday needs</li>
+        </ul>
+
+    </section>
+</body>
+
+</html>

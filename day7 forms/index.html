@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation Form</title>
+</head>
+
+<body>
+
+    <h1>Travel Reservation Form</h1>
+
+    <p><b>*denotes mandatory</b></p>
+
+    <form>
+
+        <label>Full Name*:</label>
+        <br>
+        <input type="text" placeholder="FirstName LastName">
+        <br><br>
+
+        <label>Email Address*:</label>
+        <br>
+        <input type="email" name="Email" id="Email" placeholder="EMAIL_ADDRESS">
+        <br><br>
+
+        <label>Select Tour Package*:</label>
+
+        <br>
+
+        <select name="Destination" id="Destination">
+            <option value="Goa">Goa</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Shimla">Shimla</option>
+            <option value="Manali">Manali</option>
+        </select>
+
+        <br><br>
+
+        <label>Arrival date*:</label>
+        <br>
+        <input type="date">
+        <br><br>
+
+        <label>Number of person*:</label>
+        <br>
+        <input type="number">
+        <br><br>
+
+        <label>What would you want to avail?*</label>
+        <br>
+        <input type="checkbox" id="Boarding" name="avail">
+        <label for="Boardig">Boarding</label>
+        <br>
+
+        <input type="checkbox" id="Fooding" name="avail">
+        <label for="Fooding">Fooding</label>
+        <br>
+
+        <input type="checkbox" id="Sight Seeing" name="avail">
+        <label for="Sight Seeing">Sight Seeing</label>
+        <br><br>
+
+        <label>Discount Coupon code:</label>
+        <br>
+        <input type="text" name="code" id="code" placeholder="UNKNOWN_TYPE">
+        <br><br>
+
+        <label>Terms and Conditions*</label>
+        <br>
+
+        <input type="radio" id="I agree" name="terms">
+        <label for="I agree">I agree</label>
+        <br>
+        <input type="radio" id="I disagree" name="terms">
+        <label for="I disagree">I disagree</label>
+
+        <br><br>
+
+        <input type="button" value="Complete reservation">
+
+
+    </form>
+</body>
+
+</html>
